@@ -1,0 +1,33 @@
+body {
+    background-color: tan;
+    color: blue;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+#About {
+    text-align: center;
+}
+
+h1 {
+    color: rgb(0, 255, 166);
+    font-size: 50px;
+    font-weight: bold;
+    font-family: cedarville cursive;
+    
+}
+
+h2 {
+    color: rgb(0, 255, 166);
+    font-size: large;
+    font-weight: bold; 
+}
+
+#Experience li {
+    background-color: antiquewhite;
+    box-shadow: 0 2px 4px rgba(144, 238, 144, 0.5);
+    ;
+}
+
