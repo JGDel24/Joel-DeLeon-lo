@@ -25,45 +25,34 @@ h2 {
     font-weight: bold;
 }
 
+#Experience {
+    background-color: #f5f5dc;
+    box-shadow: 0 4px 8px rgba(0, 128, 0, 0.5);
+}
+
+.experience-container {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.experience-item {
+    display: flex;
+    flex-direction: column;
+
+}
+
 .job-header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin-bottom: 5px;
-}
-
-
-#Experience {
-    padding: 20px;
-    margin: 20px;
-}
-
-#Experience h2 {
-    margin-bottom: 20px;
-}
-
-
-#Experience li {
-    background-color: antiquewhite;
-    box-shadow: 0 2px 4px rgba(144, 238, 144, 0.5);
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-
-
 }
 
 .job-title {
     font-weight: bold;
 }
 
-.job-description {
-    margin-left: 20px;
-    padding: 5px 0;
-}
-
 .job-dates {
-    margin-left: auto;
+    font-style: italic;
 }
 
 
@@ -71,13 +60,21 @@ h2 {
 
 
 
-#Connect a {
-    display: flexbox;
+#Connect {
+    display: flex;
+    flex-direction: column;
     background-color: antiquewhite;
     box-shadow: 0 2px 4px rgba(144, 238, 144, 0.5);
-    border-radius: 15px;
-    padding: 10px;
+
 }
+
+
+.row {
+    display: flex;
+    gap: 10px;
+}
+
+
 
 #Connect i {
     margin: 3px;
