@@ -65,9 +65,8 @@ ul {
 
 
 
-#Connect {
-    display: flexbox;
-    flex-direction: column;
+#Connect a {
+    display: flex;
     background-color: antiquewhite;
     box-shadow: 0 2px 4px rgba(144, 238, 144, 0.5);
 
