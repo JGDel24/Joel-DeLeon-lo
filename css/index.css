@@ -26,19 +26,24 @@ h2 {
 }
 
 #Experience {
-    background-color: #f5f5dc;
-    box-shadow: 0 4px 8px rgba(0, 128, 0, 0.5);
-}
-
-.experience-container {
     display: flex;
     flex-direction: column;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 
 }
 
 .experience-item {
     display: flex;
     flex-direction: column;
+    border-radius: 5px;
+    flex-direction: column;
+    background-color: #f5f5dc;
+    box-shadow: 0 4px 8px rgba(0, 128, 0, 0.5);
 
 }
 
@@ -61,7 +66,7 @@ h2 {
 
 
 #Connect {
-    display: flex;
+    display: flexbox;
     flex-direction: column;
     background-color: antiquewhite;
     box-shadow: 0 2px 4px rgba(144, 238, 144, 0.5);
@@ -70,7 +75,7 @@ h2 {
 
 
 .row {
-    display: flex;
+    display: flexbox;
     gap: 10px;
 }
 
