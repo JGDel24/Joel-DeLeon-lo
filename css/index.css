@@ -16,22 +16,77 @@ h1 {
     font-size: 50px;
     font-weight: bold;
     font-family: cedarville cursive;
-    
+
 }
 
 h2 {
     color: rgb(0, 255, 166);
     font-size: large;
-    font-weight: bold; 
+    font-weight: bold;
 }
 
-#Experience li {
-    background-color: antiquewhite;
-    box-shadow: 0 2px 4px rgba(144, 238, 144, 0.5);
+#Experience {
+    display: flex;
+    flex-direction: column;
 }
+
+#Experience ul {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+}
+
+.experience-item {
+    display: flex;
+    flex-direction: column;
+    border-radius: 6px;
+    flex-direction: column;
+    background-color: #f5f5dc;
+    box-shadow: 0 4px 8px rgba(0, 128, 0, 0.5);
+
+}
+
+.job-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.job-title {
+    font-weight: bold;
+}
+
+.job-dates {
+    font-style: italic;
+}
+
+
+
+
+
 
 #Connect a {
+    
     background-color: antiquewhite;
     box-shadow: 0 2px 4px rgba(144, 238, 144, 0.5);
+
 }
 
+
+.row {
+   padding: 10px; 
+    
+}
+
+
+
+#Connect i {
+    margin: 3px;
+    font-size: 25px;
+}
+
+#Connect ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
