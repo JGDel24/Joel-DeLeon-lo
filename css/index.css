@@ -1,5 +1,18 @@
+/*mobile Style*/
+#nav {
+    list-style: none;
+    background-color: #f5f5dc;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgb(231, 33, 225);
+}
+
+#nav a {
+    text-decoration: none;
+
+}
+
 body {
-    background-color: tan;
+    background-color: rgb(98, 174, 122);
     color: blue;
 }
 
@@ -12,16 +25,15 @@ section {
 }
 
 h1 {
-    color: rgb(0, 255, 166);
-    font-size: 50px;
+    color: navy;
+    font-size: 30px;
     font-weight: bold;
-    font-family: cedarville cursive;
-
+    font-family: Cedarville Cursive;
 }
 
 h2 {
-    color: rgb(0, 255, 166);
-    font-size: large;
+    color: navy;
+    font-size: 24px;
     font-weight: bold;
 }
 
@@ -34,17 +46,14 @@ h2 {
     display: flex;
     flex-direction: column;
     gap: 25px;
-
 }
 
 .experience-item {
     display: flex;
     flex-direction: column;
     border-radius: 6px;
-    flex-direction: column;
     background-color: #f5f5dc;
-    box-shadow: 0 4px 8px rgba(0, 128, 0, 0.5);
-
+    box-shadow: 0 4px 8px rgb(231, 33, 225);
 }
 
 .job-header {
@@ -60,33 +69,228 @@ h2 {
     font-style: italic;
 }
 
-
-
-
-
-
 #Connect a {
-    
     background-color: antiquewhite;
-    box-shadow: 0 2px 4px rgba(144, 238, 144, 0.5);
-
+    box-shadow: 0 2px 4px rgba(231, 33, 225);
 }
-
 
 .row {
-   padding: 10px; 
-    
+    padding: 10px;
 }
-
-
 
 #Connect i {
     margin: 3px;
-    font-size: 25px;
+    font-size: 24px;
 }
 
 #Connect ul {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     list-style: none;
+}
+
+
+/*Tablet style*/
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+    #nav {
+        list-style: none;
+        border-radius: 6px;
+        box-shadow: 0 4px 8px rgb(6, 139, 255);
+    }
+
+    #nav a {
+        text-decoration: none;
+
+    }
+
+    body {
+        background-color: lightgray;
+        color: darkgray;
+    }
+
+    section {
+        margin-bottom: 50px;
+    }
+
+    #About {
+        text-align: center;
+    }
+
+    h1 {
+        color: darkgray;
+        font-size: 32px;
+        font-weight: bold;
+        font-family: Cedarville Cursive;
+    }
+
+    h2 {
+        color: darkgrey;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    #Experience {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #Experience ul {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .experience-item {
+        display: flex;
+        flex-direction: column;
+        border-radius: 6px;
+        background-color: #f5f5dc;
+        box-shadow: 0 4px 8px rgb(6, 139, 255);
+    }
+
+    .job-header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .job-title {
+        font-weight: bold;
+    }
+
+    .job-dates {
+        font-style: italic;
+    }
+
+    #Connect a {
+        background-color: antiquewhite;
+        box-shadow: 0 4px 8px rgb(6, 139, 255);
+    }
+
+    .row {
+        padding: 10px;
+    }
+
+    #Connect i {
+        margin: 3px;
+        font-size: 28px;
+    }
+
+    #Connect ul {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+    }
+
+}
+
+/*Desktop style*/
+@media only screen and (min-width: 900px) {
+    #nav {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        gap: 20px;
+        background-color: #f5f5dc;
+
+    }
+
+    #nav a {
+        color: rgb(0, 255, 166);
+        text-decoration: none;
+    }
+
+    body {
+        background-color: tan;
+        color: blue;
+    }
+
+    section {
+        margin-bottom: 50px;
+    }
+
+    #About {
+        text-align: center;
+    }
+
+    h1 {
+        color: rgb(0, 255, 166);
+        font-size: 36px;
+        font-weight: bold;
+        font-family: cedarville cursive;
+
+    }
+
+    h2 {
+        color: rgb(0, 255, 166);
+        font-size: 32px;
+        font-weight: bold;
+    }
+
+    #Experience {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #Experience ul {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+
+    }
+
+    .experience-item {
+        display: flex;
+        flex-direction: column;
+        border-radius: 6px;
+        flex-direction: column;
+        background-color: #f5f5dc;
+        box-shadow: 0 4px 8px rgba(1, 8, 28, 0.5);
+
+    }
+
+    .job-header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .job-title {
+        font-weight: bold;
+    }
+
+    .job-dates {
+        font-style: italic;
+    }
+
+
+
+
+
+
+    #Connect a {
+
+        background-color: antiquewhite;
+        box-shadow: 0 2px 4px rgba(35, 106, 230, 0.5);
+        color: rgb(0, 255, 166);
+
+    }
+
+
+    .row {
+        padding: 10px;
+
+    }
+
+    #Connect i {
+        margin: 3px;
+        font-size: 32px;
+    }
+
+    #Connect ul {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+    }
+
+
+
 }
