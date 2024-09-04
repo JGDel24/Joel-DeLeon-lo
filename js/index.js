@@ -27,16 +27,16 @@ for (let i = 0; i < skills.length; i++) {
 
 const messageForm = document.querySelector('form[name="Leave_message"]');
 
-messageForm.addEventListener('submit', function(event) {
-    
+messageForm.addEventListener('submit', function (event) {
+
     event.preventDefault();
-    
-    
+
+
     let usersName = document.querySelector('input[name="usersName"]').value;
     let usersEmail = document.querySelector('input[name="usersEmail"]').value;
     let usersMessage = document.querySelector('textarea[name="usersMessage"]').value;
-    
-    
+
+
     console.log(usersName);
     console.log(usersEmail);
     console.log(usersMessage);
@@ -50,7 +50,7 @@ messageForm.addEventListener('submit', function(event) {
     removeButton.innerText = 'remove';
     removeButton.type = 'button';
 
-    removeButton.addEventListener('click', function(event){
+    removeButton.addEventListener('click', function (event) {
         let entry = removeButton.parentNode;
 
         entry.remove()
@@ -63,6 +63,28 @@ messageForm.addEventListener('submit', function(event) {
     messageForm.reset();
 });
 
+fetch('https://api.github.com/users/JGDel24/repos')
+    .then(function (response) {
+        if (response.ok) {
+            return response.json();
+        }
+    })
 
+    .then(function (repository) {
+        console.log(repository);
 
+        const projectSection = document.getElementById('Projects');
 
+        const projectList = projectSection.querySelector('ul');
+
+        for (let i = 0; i < repository.length; i++) {
+            let project = document.createElement('li');
+            project.innerText = repository[i].name;
+
+            projectList.appendChild(project);
+        }
+    })
+
+    .catch(function (error) {
+        console.error('Error', error);
+    })
