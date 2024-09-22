@@ -41,7 +41,7 @@ messageForm.addEventListener('submit', function (event) {
     console.log(usersEmail);
     console.log(usersMessage);
 
-    const messageSection = document.getElementById('messages');
+    const messageSection = document.getElementById('Message');
     let messageList = messageSection.querySelector('ul');
     let newMessage = document.createElement('li');
     newMessage.innerHTML = `<a href="mailto:${usersEmail}">${usersName}</a> <span>${usersMessage}</span>`;
