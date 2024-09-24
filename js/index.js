@@ -14,7 +14,7 @@ footer.appendChild(copyright);
 
 let skills = ["JavaScript", "HTML", "CSS", "Adobe Photoshop", "GitHub"];
 
-let skillsSection = document.querySelector("#skills");
+let skillsSection = document.querySelector("#Skills");
 
 let skillsList = skillsSection.querySelector('ul');
 
