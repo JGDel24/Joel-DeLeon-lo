@@ -14,7 +14,7 @@ footer.appendChild(copyright);
 
 let skills = ["JavaScript", "HTML", "CSS", "Adobe Photoshop", "GitHub"];
 
-let skillsSection = document.querySelector("#skills");
+let skillsSection = document.querySelector("#Skills");
 
 let skillsList = skillsSection.querySelector('ul');
 
@@ -41,7 +41,7 @@ messageForm.addEventListener('submit', function (event) {
     console.log(usersEmail);
     console.log(usersMessage);
 
-    const messageSection = document.getElementById('messages');
+    const messageSection = document.getElementById('Message');
     let messageList = messageSection.querySelector('ul');
     let newMessage = document.createElement('li');
     newMessage.innerHTML = `<a href="mailto:${usersEmail}">${usersName}</a> <span>${usersMessage}</span>`;
